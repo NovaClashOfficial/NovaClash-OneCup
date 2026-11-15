@@ -523,5 +523,34 @@ a {
   .site-footer {
     justify-content: center;
     text-align: center;
+
+    /* LOGO OFICIAL NOVA CLASH ONECUP */
+
+.site-logo {
+  display: block;
+  width: 230px;
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.25s ease, filter 0.25s ease;
+}
+
+.brand:hover .site-logo {
+  transform: scale(1.04);
+  filter: drop-shadow(0 0 12px rgba(189, 0, 255, 0.45));
+}
+
+.footer-brand .site-logo {
+  width: 190px;
+}
+
+@media (max-width: 520px) {
+  .site-logo {
+    width: 175px;
+  }
+
+  .footer-brand .site-logo {
+    width: 160px;
+  }
+}
   }
 }
