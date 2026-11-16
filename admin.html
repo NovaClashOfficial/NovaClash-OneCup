@@ -4,25 +4,73 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Admin | Nova Clash OneCup</title>
+  <title>Administración | Nova Clash OneCup</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <main class="admin-login">
-    <h1>NOVA CLASH <span>ONECUP</span></h1>
-    <h2>Panel de administración</h2>
+<body class="admin-page">
 
-    <form id="loginForm">
-      <label for="email">Correo electrónico</label>
-      <input id="email" type="email" required placeholder="Tu correo">
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">NC</span>
+      <span class="brand-name">NOVA CLASH <b>ONECUP</b></span>
+    </a>
+    <a class="nav-link" href="index.html">Volver al inicio</a>
+  </header>
 
-      <label for="password">Contraseña</label>
-      <input id="password" type="password" required placeholder="Tu contraseña">
+  <main class="admin-main">
 
-      <button type="submit">Iniciar sesión</button>
-    </form>
+    <section id="loginSection" class="admin-card">
+      <p class="eyebrow">ACCESO RESTRINGIDO</p>
+      <h1>PANEL <span>ADMIN</span></h1>
+      <p>Iniciá sesión para administrar las inscripciones.</p>
 
-    <p id="message" role="status"></p>
+      <form id="loginForm">
+        <label for="email">Correo electrónico</label>
+        <input id="email" type="email" required autocomplete="username">
+
+        <label for="password">Contraseña</label>
+        <input id="password" type="password" required autocomplete="current-password">
+
+        <button id="loginButton" type="submit">INICIAR SESIÓN</button>
+      </form>
+
+      <p id="loginMessage" class="form-message" role="status"></p>
+    </section>
+
+    <section id="dashboardSection" class="admin-dashboard" hidden>
+      <div class="admin-heading">
+        <div>
+          <p class="eyebrow">GESTIÓN DEL TORNEO</p>
+          <h1>INSCRIPCIONES</h1>
+        </div>
+        <button id="logoutButton" class="secondary-button" type="button">
+          CERRAR SESIÓN
+        </button>
+      </div>
+
+      <div class="admin-stats">
+        <div class="admin-stat">
+          <span>APROBADOS</span>
+          <strong id="approvedCount">0 / 32</strong>
+        </div>
+        <div class="admin-stat">
+          <span>PENDIENTES</span>
+          <strong id="pendingCount">0</strong>
+        </div>
+        <div class="admin-stat">
+          <span>RECHAZADOS</span>
+          <strong id="rejectedCount">0</strong>
+        </div>
+      </div>
+
+      <p id="dashboardMessage" class="form-message" role="status"></p>
+
+      <h2>Solicitudes recibidas</h2>
+      <div id="registrationsList" class="registrations-list">
+        <p>Cargando inscripciones...</p>
+      </div>
+    </section>
+
   </main>
 
   <script type="module" src="admin.js"></script>
