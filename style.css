@@ -526,11 +526,7 @@ a {
 
     /* LOGO OFICIAL NOVA CLASH ONECUP */
 
-.brand {
-  display: flex;
-  align-items: center;
-  flex-shrink: 0;
-}
+/* AJUSTE DEL LOGO ONECUP */
 
 .site-logo {
   width: 190px;
