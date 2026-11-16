@@ -572,3 +572,341 @@ a {
     text-align: center;
   }
 }
+
+
+/* =================================
+   NOVA CLASH ONECUP - INSCRIPCIONES
+================================= */
+
+.registration-page,
+.admin-page {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 50% 10%, rgba(139, 75, 220, 0.17), transparent 38%),
+    #0c0914;
+  color: #fff;
+}
+
+.registration-main,
+.admin-main {
+  width: min(100% - 32px, 900px);
+  margin: 0 auto;
+  padding: 65px 0;
+}
+
+.registration-card,
+.admin-card {
+  width: min(100%, 560px);
+  margin: 0 auto;
+  padding: 38px;
+  background: rgba(26, 19, 39, 0.94);
+  border: 1px solid rgba(185, 143, 255, 0.25);
+  border-radius: 18px;
+  box-shadow: 0 20px 65px rgba(0, 0, 0, 0.35);
+}
+
+.registration-card h1,
+.admin-card h1,
+.admin-heading h1 {
+  margin: 8px 0 12px;
+  font-family: "Orbitron", sans-serif;
+  font-size: clamp(25px, 5vw, 36px);
+}
+
+.registration-card h1 span,
+.admin-card h1 span {
+  color: #c39aff;
+}
+
+.eyebrow {
+  color: #d8b66b;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+
+.registration-description,
+.admin-card > p {
+  color: #bcb3ca;
+  line-height: 1.6;
+}
+
+.registration-status {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin: 24px 0;
+  color: #8de8b0;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.status-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #55df8b;
+  box-shadow: 0 0 12px #55df8b;
+}
+
+.registration-card form,
+.admin-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.registration-card label,
+.admin-card label {
+  margin-top: 10px;
+  color: #e8e0f1;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.registration-card input:not([type="checkbox"]),
+.admin-card input {
+  width: 100%;
+  padding: 14px;
+  color: white;
+  background: #120e1c;
+  border: 1px solid #443453;
+  border-radius: 8px;
+  outline: none;
+}
+
+.registration-card input:focus,
+.admin-card input:focus {
+  border-color: #b78aff;
+  box-shadow: 0 0 0 2px rgba(183, 138, 255, 0.12);
+}
+
+.registration-card small {
+  color: #9c91a9;
+  line-height: 1.5;
+}
+
+.rules-check {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 18px 0 !important;
+  line-height: 1.5;
+  font-weight: 400 !important;
+}
+
+.rules-check input {
+  margin-top: 4px;
+  accent-color: #a56bff;
+}
+
+.registration-card button,
+.admin-card button,
+.approve-button,
+.reject-button,
+.secondary-button {
+  padding: 13px 18px;
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+.registration-card button,
+.admin-card form button {
+  color: #160e20;
+  background: linear-gradient(110deg, #c59aff, #e4c77b);
+}
+
+.registration-card button:disabled,
+.admin-card button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.privacy-note {
+  margin-top: 22px;
+  color: #9c91a9;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.form-message {
+  min-height: 22px;
+  margin: 12px 0;
+  color: #d6c9e8;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.form-message.success {
+  color: #79e6a1;
+}
+
+.form-message.error {
+  color: #ff8585;
+}
+
+/* =================================
+   PANEL DE ADMINISTRACIÓN
+================================= */
+
+.admin-dashboard {
+  width: 100%;
+}
+
+.admin-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.admin-heading h1 {
+  margin-bottom: 0;
+}
+
+.admin-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin: 25px 0 35px;
+}
+
+.admin-stat {
+  padding: 22px;
+  background: #1a1327;
+  border: 1px solid rgba(185, 143, 255, 0.2);
+  border-radius: 12px;
+}
+
+.admin-stat span {
+  display: block;
+  margin-bottom: 10px;
+  color: #a99db7;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.admin-stat strong {
+  color: #d6b5ff;
+  font-family: "Orbitron", sans-serif;
+  font-size: 25px;
+}
+
+.admin-dashboard h2 {
+  margin-bottom: 18px;
+  font-family: "Orbitron", sans-serif;
+  font-size: 20px;
+}
+
+.registrations-list {
+  display: grid;
+  gap: 14px;
+}
+
+.registration-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  background: #1a1327;
+  border: 1px solid rgba(185, 143, 255, 0.2);
+  border-radius: 12px;
+}
+
+.registration-info h3 {
+  margin: 0 0 10px;
+  color: #e0c7ff;
+  font-size: 19px;
+}
+
+.registration-info p {
+  margin: 5px 0;
+  color: #bcb3ca;
+  font-size: 13px;
+  overflow-wrap: anywhere;
+}
+
+.player-status {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 5px 9px;
+  border-radius: 5px;
+  background: #393044;
+  color: #e5d9f2;
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.status-aprobada {
+  color: #8de8b0;
+  background: rgba(46, 160, 95, 0.15);
+}
+
+.status-rechazada {
+  color: #ff9292;
+  background: rgba(220, 65, 65, 0.15);
+}
+
+.status-pendiente {
+  color: #f1cf83;
+  background: rgba(205, 157, 60, 0.15);
+}
+
+.registration-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.approve-button {
+  color: #102318;
+  background: #7ce3a0;
+}
+
+.reject-button {
+  color: white;
+  background: #bd4e59;
+}
+
+.secondary-button {
+  color: #e6d7f7;
+  background: #342644;
+  border: 1px solid #634a7e;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+@media (max-width: 600px) {
+  .registration-main,
+  .admin-main {
+    padding: 30px 0;
+  }
+
+  .registration-card,
+  .admin-card {
+    padding: 24px 18px;
+  }
+
+  .admin-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-heading,
+  .registration-item {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .registration-actions button {
+    flex: 1;
+  }
+}
