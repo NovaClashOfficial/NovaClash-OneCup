@@ -1,1 +1,93 @@
 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Inscribite en Nova Clash OneCup.">
+  <title>Inscripciones | Nova Clash OneCup</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="registration-page">
+
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">NC</span>
+      <span class="brand-name">NOVA CLASH <b>ONECUP</b></span>
+    </a>
+    <a class="nav-link" href="index.html">Volver al inicio</a>
+  </header>
+
+  <main class="registration-main">
+    <section class="registration-card">
+      <p class="eyebrow">NOVA CLASH COMPETITIVE</p>
+      <h1>INSCRIPCIONES <span>ONECUP</span></h1>
+      <p class="registration-description">
+        Completá tus datos para solicitar un lugar en el torneo.
+      </p>
+
+      <div class="registration-status">
+        <span class="status-dot"></span>
+        Inscripciones abiertas
+      </div>
+
+      <form id="registrationForm">
+        <label for="nickname">Nickname de Brawl Stars</label>
+        <input
+          id="nickname"
+          name="nickname"
+          type="text"
+          minlength="2"
+          maxlength="30"
+          placeholder="Tu nickname dentro del juego"
+          autocomplete="off"
+          required
+        >
+
+        <label for="whatsapp">Número de WhatsApp</label>
+        <input
+          id="whatsapp"
+          name="whatsapp"
+          type="tel"
+          minlength="8"
+          maxlength="20"
+          placeholder="+54 9 11 1234 5678"
+          autocomplete="tel"
+          required
+        >
+        <small>Incluí el código de país. Este dato solo lo verá la administración.</small>
+
+        <label for="pais">País</label>
+        <input
+          id="pais"
+          name="pais"
+          type="text"
+          minlength="2"
+          maxlength="50"
+          placeholder="Ej. Argentina"
+          autocomplete="country-name"
+          required
+        >
+
+        <label class="rules-check">
+          <input id="acceptRules" type="checkbox" required>
+          <span>Acepto las reglas y condiciones de Nova Clash OneCup.</span>
+        </label>
+
+        <button id="submitButton" type="submit">
+          ENVIAR INSCRIPCIÓN
+        </button>
+
+        <p id="formMessage" class="form-message" role="status" aria-live="polite"></p>
+      </form>
+
+      <p class="privacy-note">
+        Tu número de WhatsApp será privado y solo estará disponible para los administradores.
+        Enviar el formulario no garantiza la participación: tu solicitud deberá ser aprobada.
+      </p>
+    </section>
+  </main>
+
+  <script type="module" src="inscripciones.js"></script>
+</body>
+</html>
