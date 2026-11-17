@@ -5,13 +5,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#100b1c">
+  <meta name="description" content="Nova Clash OneCup: torneo individual de Brawl Stars. 32 jugadores, una competencia y un solo campeón.">
   <title>Nova Clash OneCup</title>
+
   <link rel="stylesheet" href="style.css">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;800&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
+
+  <!-- HEADER -->
   <header class="site-header">
     <a class="brand" href="#inicio">
       <span class="brand-mark">NC</span>
@@ -27,18 +33,27 @@
       <a href="#formato">Formato</a>
       <a href="#clasificacion">Clasificación</a>
       <a href="#premios">Premios</a>
+      <a href="#reglamento">Reglamento</a>
       <a href="inscripciones.html" class="nav-link">Inscripciones</a>
     </nav>
   </header>
 
+
   <main>
+
+    <!-- PORTADA -->
     <section class="hero" id="inicio">
       <div class="hero-glow"></div>
 
       <div class="hero-content">
         <p class="eyebrow">NOVA CLASH PRESENTA</p>
+
         <h1>ONE<span>CUP</span></h1>
-        <p class="hero-subtitle">32 jugadores. Una liga. Un solo campeón.</p>
+
+        <p class="hero-subtitle">
+          32 jugadores. Una competencia. Un solo campeón.
+        </p>
+
         <p class="hero-description">
           La competencia individual donde cada partida cuenta.
           Demuestra tu nivel y conquista la cima.
@@ -48,9 +63,11 @@
           <a class="primary-button" href="inscripciones.html">
             INSCRIBIRSE
           </a>
+
           <a class="secondary-button" href="#formato">
             VER FORMATO
           </a>
+
           <a class="secondary-button" href="#clasificacion">
             CLASIFICACIÓN
           </a>
@@ -60,6 +77,7 @@
       <div class="hero-decoration" aria-hidden="true">
         <div class="orbit orbit-one"></div>
         <div class="orbit orbit-two"></div>
+
         <div class="orbit-core">
           <img src="logo.png" alt="Nova Clash OneCup">
         </div>
@@ -68,89 +86,440 @@
       <div class="hero-bottom-line"></div>
     </section>
 
+
+    <!-- ESTADÍSTICAS -->
     <section class="stats-section" aria-label="Datos del torneo">
+
       <div class="stat-card">
         <strong>32</strong>
         <span>JUGADORES</span>
       </div>
+
       <div class="stat-card">
-        <strong>31</strong>
-        <span>JORNADAS</span>
+        <strong>15</strong>
+        <span>PARTIDOS POR JUGADOR</span>
       </div>
+
       <div class="stat-card">
-        <strong>496</strong>
-        <span>PARTIDAS</span>
+        <strong>240</strong>
+        <span>PARTIDAS DE GRUPOS</span>
       </div>
+
       <div class="stat-card">
         <strong>1</strong>
         <span>CAMPEÓN</span>
       </div>
+
     </section>
 
+
+    <!-- FORMATO -->
     <section class="content-section" id="formato">
+
       <div class="section-heading">
         <p class="eyebrow">EL CAMINO A LA GLORIA</p>
         <h2>FORMATO DEL <span>TORNEO</span></h2>
-        <p>Una competencia individual en formato liga.</p>
+        <p>Una competencia individual dividida en dos lados.</p>
       </div>
 
       <div class="feature-grid">
+
         <article class="feature-card">
           <div class="feature-number">01</div>
-          <h3>LIGA</h3>
-          <p>Los 32 participantes se enfrentarán entre sí. Cada jugador disputará 31 encuentros.</p>
+          <h3>FASE DE GRUPOS</h3>
+          <p>
+            Los 32 participantes se dividirán en dos lados de
+            16 jugadores. Cada lado tendrá su propia liga.
+          </p>
         </article>
 
         <article class="feature-card">
           <div class="feature-number">02</div>
-          <h3>BANS & PICKS</h3>
-          <p>Las selecciones y prohibiciones de mapas formarán parte de cada enfrentamiento.</p>
+          <h3>TODOS CONTRA TODOS</h3>
+          <p>
+            Cada jugador disputará 15 enfrentamientos.
+            Cada victoria otorgará 2 puntos, con un máximo
+            de 30 puntos.
+          </p>
         </article>
 
         <article class="feature-card">
           <div class="feature-number">03</div>
           <h3>PLAYOFFS</h3>
-          <p>La fase final reunirá a los mejores clasificados para definir al campeón.</p>
+          <p>
+            Los 8 mejores jugadores de cada lado avanzarán
+            a la fase eliminatoria. Los campeones de ambos
+            lados se enfrentarán en la gran final.
+          </p>
         </article>
+
       </div>
+
+
+      <!-- EXPLICACIÓN DE LOS LADOS -->
+      <div class="sides-container">
+
+        <div class="side-card">
+          <span class="side-label">LADO A</span>
+          <h3>16 JUGADORES</h3>
+          <p>15 enfrentamientos por participante.</p>
+          <div class="side-qualification">
+            <strong>8</strong>
+            <span>CLASIFICADOS</span>
+          </div>
+        </div>
+
+        <div class="side-vs">VS</div>
+
+        <div class="side-card side-card-gold">
+          <span class="side-label">LADO B</span>
+          <h3>16 JUGADORES</h3>
+          <p>15 enfrentamientos por participante.</p>
+          <div class="side-qualification">
+            <strong>8</strong>
+            <span>CLASIFICADOS</span>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="points-explanation">
+        <div>
+          <strong>+2 PUNTOS</strong>
+          <span>Por cada victoria</span>
+        </div>
+
+        <div>
+          <strong>30 PUNTOS</strong>
+          <span>Puntuación máxima</span>
+        </div>
+
+        <div>
+          <strong>TOP 8</strong>
+          <span>Clasifican por cada lado</span>
+        </div>
+      </div>
+
+      <div class="playoff-explanation">
+        <p class="eyebrow">ELIMINACIÓN DIRECTA</p>
+        <h3>16 CLASIFICADOS. UN SOLO CAMPEÓN.</h3>
+        <p>
+          Cada lado tendrá sus propios enfrentamientos eliminatorios.
+          Los dos finalistas, uno de cada lado, competirán por el título
+          de Nova Clash OneCup.
+        </p>
+        <div class="playoff-path">
+          <span>OCTAVOS</span>
+          <span>CUARTOS</span>
+          <span>SEMIFINAL</span>
+          <span>FINAL</span>
+        </div>
+      </div>
+
     </section>
 
+
+    <!-- CLASIFICACIÓN -->
     <section class="content-section ranking-section" id="clasificacion">
+
       <div class="section-heading">
         <p class="eyebrow">LA CIMA TE ESPERA</p>
         <h2>CLASIFICACIÓN <span>GENERAL</span></h2>
-        <p>La tabla oficial de la OneCup aparecerá aquí.</p>
+        <p>Los mejores jugadores de cada lado lucharán por avanzar.</p>
       </div>
 
-      <div class="empty-state">
-        <div class="empty-icon">🏆</div>
-        <h3>LA COMPETENCIA AÚN NO COMENZÓ</h3>
-        <p>Próximamente podrás consultar posiciones, victorias, derrotas y puntos.</p>
+      <div class="ranking-placeholder-grid">
+
+        <div class="ranking-placeholder">
+          <span class="ranking-side-label">LADO A</span>
+          <h3>CLASIFICACIÓN</h3>
+
+          <div class="ranking-empty-icon">🏆</div>
+
+          <p>
+            Próximamente se mostrarán las posiciones,
+            victorias, derrotas y puntos de los participantes.
+          </p>
+
+          <span class="ranking-status">TABLA PRÓXIMAMENTE</span>
+        </div>
+
+        <div class="ranking-placeholder">
+          <span class="ranking-side-label">LADO B</span>
+          <h3>CLASIFICACIÓN</h3>
+
+          <div class="ranking-empty-icon">🏆</div>
+
+          <p>
+            Próximamente se mostrarán las posiciones,
+            victorias, derrotas y puntos de los participantes.
+          </p>
+
+          <span class="ranking-status">TABLA PRÓXIMAMENTE</span>
+        </div>
+
       </div>
+
     </section>
 
+
+    <!-- PREMIOS -->
     <section class="prize-section" id="premios">
+
       <div class="prize-content">
+
         <p class="eyebrow">EL ESFUERZO TIENE SU RECOMPENSA</p>
+
         <h2>LA GLORIA <span>SE GANA</span></h2>
-        <p>La OneCup contará con premios para sus mejores competidores.</p>
-        <span class="prize-pending">PREMIOS POR ANUNCIAR</span>
+
+        <p class="prize-description">
+          Solo el campeón de Nova Clash OneCup podrá elegir
+          uno de los siguientes premios.
+        </p>
+
+        <div class="prize-options">
+
+          <!-- BRAWL PASS PLUS -->
+          <article class="prize-option">
+
+            <div class="prize-icon">
+              <svg viewBox="0 0 100 100" role="img" aria-label="Icono de pase de batalla">
+                <path d="M25 12 H75 L88 25 V75 L75 88 H25 L12 75 V25 Z"/>
+                <path d="M35 12 V88 M65 12 V88"/>
+                <path d="M43 38 L50 29 L57 38 L68 40 L60 49 L62 60 L50 55 L38 60 L40 49 L32 40 Z"/>
+                <path d="M35 70 H65"/>
+              </svg>
+            </div>
+
+            <span class="prize-category">OPCIÓN 01</span>
+            <h3>BRAWL PASS PLUS</h3>
+            <p>Un pase de batalla Plus para el campeón.</p>
+
+            <span class="prize-tag">TRANSFERIBLE</span>
+
+          </article>
+
+
+          <!-- GEMAS -->
+          <article class="prize-option prize-option-gold">
+
+            <div class="prize-icon">
+              <svg viewBox="0 0 100 100" role="img" aria-label="Icono de gemas">
+                <path d="M50 10 L75 28 L67 76 L50 91 L33 76 L25 28 Z"/>
+                <path d="M25 28 H75"/>
+                <path d="M50 10 L40 28 L50 91 L60 28 Z"/>
+                <path d="M25 28 L40 28 L50 10 L60 28 L75 28"/>
+              </svg>
+            </div>
+
+            <span class="prize-category">OPCIÓN 02</span>
+            <h3>170 GEMAS</h3>
+            <p>Una recompensa de 170 gemas para el campeón.</p>
+
+            <span class="prize-tag">PREMIO ÚNICO</span>
+
+          </article>
+
+        </div>
+
+        <div class="prize-note">
+          <span>★</span>
+          El campeón decide cuál de los dos premios recibir.
+          Si elige el Brawl Pass Plus, podrá quedárselo o regalarlo
+          a otra persona.
+        </div>
+
       </div>
 
-      <div class="prize-trophy" aria-hidden="true">🏆</div>
     </section>
+
+
+    <!-- REGLAMENTO -->
+    <section class="content-section rules-section" id="reglamento">
+
+      <div class="section-heading">
+        <p class="eyebrow">LAS REGLAS DEL COMBATE</p>
+        <h2>REGLAMENTO <span>OFICIAL</span></h2>
+        <p>Conocé las normas antes de participar en OneCup.</p>
+      </div>
+
+
+      <div class="rules-container">
+
+        <!-- FORMATO -->
+        <details class="rule-item" open>
+          <summary>
+            <span class="rule-number">01</span>
+            <span class="rule-title">Formato del torneo</span>
+            <span class="rule-arrow">+</span>
+          </summary>
+
+          <div class="rule-content">
+            <ul>
+              <li>Los 32 participantes serán divididos en dos lados de 16 jugadores cada uno.</li>
+              <li>La fase de grupos se disputará bajo el formato de todos contra todos dentro de cada lado.</li>
+              <li>Cada participante jugará un total de 15 enfrentamientos.</li>
+              <li>Cada victoria otorgará 2 puntos al ganador.</li>
+              <li>La puntuación máxima será de 30 puntos por jugador.</li>
+              <li>Los 8 jugadores con mayor puntuación de cada lado clasificarán a los playoffs.</li>
+            </ul>
+          </div>
+        </details>
+
+
+        <!-- BANS -->
+        <details class="rule-item">
+          <summary>
+            <span class="rule-number">02</span>
+            <span class="rule-title">Bans y selección de brawlers</span>
+            <span class="rule-arrow">+</span>
+          </summary>
+
+          <div class="rule-content">
+            <ul>
+              <li>Los jugadores tendrán acceso a banear brawlers antes de sus enfrentamientos.</li>
+              <li>El sistema de bans permitirá una mayor variedad estratégica durante la competencia.</li>
+            </ul>
+          </div>
+        </details>
+
+
+        <!-- TOXICIDAD -->
+        <details class="rule-item">
+          <summary>
+            <span class="rule-number">03</span>
+            <span class="rule-title">Comportamiento y toxicidad</span>
+            <span class="rule-arrow">+</span>
+          </summary>
+
+          <div class="rule-content">
+            <ul>
+              <li>Se permite el uso de pins, gestos y sprays durante las partidas.</li>
+              <li>No se permitirá retrasar el comienzo de un encuentro con la intención de molestar o provocar al rival.</li>
+            </ul>
+          </div>
+        </details>
+
+
+        <!-- TIEMPOS -->
+        <details class="rule-item">
+          <summary>
+            <span class="rule-number">04</span>
+            <span class="rule-title">Tiempos de espera</span>
+            <span class="rule-arrow">+</span>
+          </summary>
+
+          <div class="rule-content">
+            <ul>
+              <li>Los jugadores tendrán 5 minutos para ingresar a la sala.</li>
+              <li>Una vez transcurrido ese tiempo, habrá otros 5 minutos de espera para iniciar el encuentro.</li>
+              <li>Si ambos jugadores ya se encuentran presentes, tendrán un máximo de 2 minutos para comenzar.</li>
+              <li>Si uno de los participantes no se presenta dentro del tiempo establecido, se otorgará el set y sus puntos al jugador presente.</li>
+            </ul>
+          </div>
+        </details>
+
+
+        <!-- CESIÓN -->
+        <details class="rule-item">
+          <summary>
+            <span class="rule-number">05</span>
+            <span class="rule-title">Cesión de puntos</span>
+            <span class="rule-arrow">+</span>
+          </summary>
+
+          <div class="rule-content">
+            <ul>
+              <li>Los participantes podrán ceder sus puntos voluntariamente un máximo de 2 veces durante la fase de grupos.</li>
+              <li>Esta posibilidad estará disponible únicamente cuando el jugador no pueda participar en un encuentro por decisión propia.</li>
+            </ul>
+          </div>
+        </details>
+
+
+        <!-- SANCIONES -->
+        <details class="rule-item">
+          <summary>
+            <span class="rule-number">06</span>
+            <span class="rule-title">Incumplimientos y sanciones</span>
+            <span class="rule-arrow">+</span>
+          </summary>
+
+          <div class="rule-content">
+            <ul>
+              <li>En caso de incumplir las normas del encuentro, como los tiempos establecidos, se otorgará el set al rival.</li>
+              <li>Si un jugador abandona un encuentro por una mala elección de brawler (pick), se le dará igualmente el set por perdido.</li>
+              <li>No se aceptarán abandonos ni incumplimientos sin una justificación razonable.</li>
+            </ul>
+          </div>
+        </details>
+
+
+        <!-- ACLARACIONES -->
+        <details class="rule-item">
+          <summary>
+            <span class="rule-number">07</span>
+            <span class="rule-title">Aclaraciones generales</span>
+            <span class="rule-arrow">+</span>
+          </summary>
+
+          <div class="rule-content">
+            <ul>
+              <li>Los participantes deberán jugar personalmente todos sus enfrentamientos.</li>
+              <li>Ninguna otra persona podrá jugar o reemplazar a un participante bajo ninguna circunstancia.</li>
+              <li>Las situaciones no contempladas en este reglamento podrán ser evaluadas por la organización del torneo.</li>
+            </ul>
+          </div>
+        </details>
+
+
+        <!-- PREMIOS -->
+        <details class="rule-item">
+          <summary>
+            <span class="rule-number">08</span>
+            <span class="rule-title">Premios</span>
+            <span class="rule-arrow">+</span>
+          </summary>
+
+          <div class="rule-content">
+            <ul>
+              <li>El campeón de Nova Clash OneCup podrá elegir entre 1 Brawl Pass Plus o 170 gemas.</li>
+              <li>El ganador podrá quedarse con el premio.</li>
+              <li>Si elige el Brawl Pass Plus, también podrá donarlo a otra persona.</li>
+            </ul>
+          </div>
+        </details>
+
+      </div>
+
+
+      <p class="rules-footer">
+        La participación en Nova Clash OneCup implica la aceptación
+        de este reglamento.
+      </p>
+
+    </section>
+
   </main>
 
+
+  <!-- FOOTER -->
   <footer class="site-footer">
+
     <a class="brand footer-brand" href="#inicio">
       <span class="brand-mark">NC</span>
       <span class="brand-name">NOVA CLASH <b>ONECUP</b></span>
     </a>
 
     <p>© 2026 Nova Clash OneCup. Todos los derechos reservados.</p>
+
     <a href="#inicio" class="back-top">VOLVER ARRIBA ↑</a>
+
   </footer>
 
+
   <script src="script.js"></script>
+
 </body>
 </html>
