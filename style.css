@@ -910,3 +910,501 @@ a {
     flex: 1;
   }
 }
+
+/* =========================================
+   NOVA CLASH ONECUP - NUEVAS SECCIONES
+========================================= */
+
+/* FORMATO */
+
+.sides-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  margin: 65px auto 35px;
+  max-width: 850px;
+}
+
+.side-card {
+  flex: 1;
+  padding: 30px 20px;
+  text-align: center;
+  background: rgba(135, 70, 255, 0.07);
+  border: 1px solid rgba(166, 105, 255, 0.4);
+  border-radius: 14px;
+  box-shadow: 0 0 25px rgba(130, 60, 255, 0.08);
+}
+
+.side-card-gold {
+  background: rgba(255, 190, 65, 0.05);
+  border-color: rgba(255, 190, 65, 0.4);
+}
+
+.side-label,
+.prize-category,
+.ranking-side-label {
+  display: block;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 12px;
+  letter-spacing: 3px;
+  color: #b88aff;
+}
+
+.side-card-gold .side-label {
+  color: #ffd16a;
+}
+
+.side-card h3 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 21px;
+  margin: 15px 0 8px;
+}
+
+.side-card p {
+  color: #aaa;
+}
+
+.side-qualification {
+  display: flex;
+  flex-direction: column;
+  margin-top: 22px;
+}
+
+.side-qualification strong {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 45px;
+  color: #c39aff;
+  text-shadow: 0 0 15px rgba(160, 90, 255, 0.6);
+}
+
+.side-card-gold .side-qualification strong {
+  color: #ffd16a;
+  text-shadow: 0 0 15px rgba(255, 190, 65, 0.5);
+}
+
+.side-qualification span {
+  font-size: 12px;
+  letter-spacing: 3px;
+}
+
+.side-vs {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 24px;
+  color: #ffd16a;
+  text-shadow: 0 0 15px rgba(255, 190, 65, 0.7);
+}
+
+.points-explanation {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  max-width: 850px;
+  margin: 30px auto;
+}
+
+.points-explanation div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 7px;
+  padding: 20px 10px;
+  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+}
+
+.points-explanation strong {
+  color: #d3adff;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 17px;
+}
+
+.points-explanation span {
+  color: #aaa;
+  font-size: 14px;
+}
+
+.playoff-explanation {
+  max-width: 850px;
+  margin: 55px auto 0;
+  padding: 35px 25px;
+  text-align: center;
+  border: 1px solid rgba(255, 190, 65, 0.25);
+  border-radius: 14px;
+  background: linear-gradient(
+    135deg,
+    rgba(130, 60, 255, 0.08),
+    rgba(255, 190, 65, 0.04)
+  );
+}
+
+.playoff-explanation h3 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 19px;
+  margin: 15px 0;
+}
+
+.playoff-explanation > p:not(.eyebrow) {
+  color: #aaa;
+  line-height: 1.6;
+}
+
+.playoff-path {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.playoff-path span {
+  padding: 10px 15px;
+  border: 1px solid rgba(180, 130, 255, 0.4);
+  border-radius: 5px;
+  color: #d5b7ff;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 11px;
+}
+
+
+/* CLASIFICACIÓN */
+
+.ranking-placeholder-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 25px;
+  max-width: 1000px;
+  margin: 40px auto 0;
+}
+
+.ranking-placeholder {
+  padding: 35px 25px;
+  text-align: center;
+  background: rgba(135, 70, 255, 0.045);
+  border: 1px solid rgba(166, 105, 255, 0.3);
+  border-radius: 12px;
+}
+
+.ranking-placeholder h3 {
+  font-family: 'Orbitron', sans-serif;
+  margin-top: 12px;
+  font-size: 18px;
+}
+
+.ranking-side-label {
+  color: #ffd16a;
+}
+
+.ranking-empty-icon {
+  font-size: 45px;
+  margin: 25px 0;
+  filter: drop-shadow(0 0 12px rgba(255, 190, 65, 0.4));
+}
+
+.ranking-placeholder p {
+  color: #aaa;
+  line-height: 1.5;
+}
+
+.ranking-status {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 8px 13px;
+  color: #c59aff;
+  border: 1px solid rgba(166, 105, 255, 0.35);
+  border-radius: 4px;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+
+/* PREMIOS */
+
+.prize-section {
+  position: relative;
+  overflow: hidden;
+  padding: 100px 25px;
+  text-align: center;
+  background:
+    radial-gradient(ellipse at 50% 50%, rgba(119, 55, 210, 0.15), transparent 65%),
+    rgba(10, 7, 18, 0.7);
+  border-top: 1px solid rgba(160, 100, 255, 0.2);
+  border-bottom: 1px solid rgba(160, 100, 255, 0.2);
+}
+
+.prize-content {
+  position: relative;
+  z-index: 1;
+  max-width: 950px;
+  margin: auto;
+}
+
+.prize-content h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: clamp(30px, 5vw, 48px);
+  margin: 15px 0;
+}
+
+.prize-content h2 span {
+  color: #c49aff;
+  text-shadow: 0 0 20px rgba(150, 80, 255, 0.5);
+}
+
+.prize-description {
+  color: #aaa;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.prize-options {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 25px;
+  margin-top: 35px;
+}
+
+.prize-option {
+  padding: 35px 25px;
+  border: 1px solid rgba(175, 110, 255, 0.45);
+  border-radius: 13px;
+  background: rgba(130, 70, 255, 0.055);
+  transition: 0.3s ease;
+}
+
+.prize-option:hover {
+  transform: translateY(-6px);
+  border-color: #c49aff;
+  box-shadow: 0 0 25px rgba(155, 90, 255, 0.16);
+}
+
+.prize-option-gold {
+  border-color: rgba(255, 195, 80, 0.45);
+  background: rgba(255, 190, 65, 0.035);
+}
+
+.prize-option-gold:hover {
+  border-color: #ffd16a;
+  box-shadow: 0 0 25px rgba(255, 190, 65, 0.12);
+}
+
+.prize-icon {
+  width: 95px;
+  height: 95px;
+  margin: 0 auto 20px;
+}
+
+.prize-icon svg {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: #bd8aff;
+  stroke-width: 2.2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  filter: drop-shadow(0 0 7px rgba(175, 110, 255, 0.8));
+}
+
+.prize-option-gold .prize-icon svg {
+  stroke: #ffd16a;
+  filter: drop-shadow(0 0 7px rgba(255, 190, 65, 0.7));
+}
+
+.prize-category {
+  font-size: 10px;
+  margin-bottom: 12px;
+}
+
+.prize-option h3 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 19px;
+  margin-bottom: 12px;
+}
+
+.prize-option p {
+  color: #aaa;
+  line-height: 1.5;
+}
+
+.prize-tag {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 7px 12px;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 10px;
+  letter-spacing: 1px;
+  color: #d2b5ff;
+  border: 1px solid rgba(175, 110, 255, 0.4);
+  border-radius: 4px;
+}
+
+.prize-option-gold .prize-tag {
+  color: #ffd16a;
+  border-color: rgba(255, 195, 80, 0.4);
+}
+
+.prize-note {
+  max-width: 720px;
+  margin: 35px auto 0;
+  padding: 18px;
+  color: #c7b5dc;
+  line-height: 1.6;
+  background: rgba(255, 255, 255, 0.025);
+  border-radius: 8px;
+}
+
+.prize-note span {
+  color: #ffd16a;
+  margin-right: 7px;
+}
+
+
+/* REGLAMENTO */
+
+.rules-section {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.rules-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 45px;
+}
+
+.rule-item {
+  overflow: hidden;
+  border: 1px solid rgba(165, 105, 255, 0.25);
+  border-radius: 9px;
+  background: rgba(120, 65, 210, 0.045);
+  transition: border-color 0.25s ease;
+}
+
+.rule-item[open] {
+  border-color: rgba(180, 125, 255, 0.65);
+  box-shadow: 0 0 18px rgba(130, 60, 255, 0.08);
+}
+
+.rule-item summary {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 20px 22px;
+  cursor: pointer;
+  list-style: none;
+}
+
+.rule-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.rule-number {
+  color: #b88aff;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 13px;
+}
+
+.rule-title {
+  flex: 1;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.rule-arrow {
+  color: #d0adff;
+  font-size: 24px;
+  transition: transform 0.25s ease;
+}
+
+.rule-item[open] .rule-arrow {
+  transform: rotate(45deg);
+}
+
+.rule-content {
+  padding: 0 25px 22px 58px;
+  color: #b8b1c4;
+  line-height: 1.7;
+}
+
+.rule-content ul {
+  padding-left: 18px;
+  margin: 0;
+}
+
+.rule-content li {
+  margin: 7px 0;
+}
+
+.rule-content li::marker {
+  color: #b88aff;
+}
+
+.rules-footer {
+  margin: 30px auto 0;
+  max-width: 700px;
+  text-align: center;
+  color: #c9b5e2;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 700px) {
+
+  .sides-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .side-card {
+    width: 100%;
+  }
+
+  .side-vs {
+    font-size: 18px;
+  }
+
+  .points-explanation {
+    grid-template-columns: 1fr;
+  }
+
+  .ranking-placeholder-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .prize-options {
+    grid-template-columns: 1fr;
+  }
+
+  .prize-section {
+    padding: 70px 18px;
+  }
+
+  .rule-item summary {
+    gap: 12px;
+    padding: 17px 14px;
+  }
+
+  .rule-title {
+    font-size: 12px;
+  }
+
+  .rule-content {
+    padding: 0 18px 20px 42px;
+    font-size: 14px;
+  }
+
+  .playoff-path {
+    gap: 8px;
+  }
+
+  .playoff-path span {
+    font-size: 9px;
+    padding: 8px;
+  }
+}
